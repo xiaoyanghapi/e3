@@ -1,0 +1,212 @@
+
+
+[INFO ] 2017-05-16 21:34:00,817 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+
+
+[INFO ] 2017-05-16 21:34:01,192 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Tue May 16 21:34:01 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-16 21:34:01,267 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\workspace_neon\e3-manager\e3-manager-web\target\classes\spring\applicationContext-dao.xml]
+
+
+[INFO ] 2017-05-16 21:34:01,585 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\workspace_neon\e3-manager\e3-manager-web\target\classes\spring\applicationContext-service.xml]
+
+
+[INFO ] 2017-05-16 21:34:01,816 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\workspace_neon\e3-manager\e3-manager-web\target\classes\spring\applicationContext-trans.xml]
+
+
+[INFO ] 2017-05-16 21:34:02,329 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\workspace_neon\e3-manager\e3-manager-web\target\classes\properties\db.properties]
+
+
+[INFO ] 2017-05-16 21:34:02,346 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-05-16 21:34:04,872 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 4029 ms
+
+
+[INFO ] 2017-05-16 21:34:04,967 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-manager': initialization started
+
+
+[INFO ] 2017-05-16 21:34:04,973 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-manager-servlet': startup date [Tue May 16 21:34:04 CST 2017]; parent: Root WebApplicationContext
+
+
+[INFO ] 2017-05-16 21:34:04,974 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2017-05-16 21:34:05,328 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-05-16 21:34:05,781 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/item/{itemId}]}" onto public com.e3.pojo.TbItem com.e3.controller.ItemController.getItemById(java.lang.Long)
+
+
+[INFO ] 2017-05-16 21:34:07,435 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-manager-servlet': startup date [Tue May 16 21:34:04 CST 2017]; parent: Root WebApplicationContext
+
+
+[INFO ] 2017-05-16 21:34:07,749 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-manager-servlet': startup date [Tue May 16 21:34:04 CST 2017]; parent: Root WebApplicationContext
+
+
+[INFO ] 2017-05-16 21:34:08,329 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'e3-manager': initialization completed in 3361 ms
+
+
+[INFO ] 2017-05-16 21:34:28,625 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655)
+{dataSource-1} inited
+
+
+[INFO ] 2017-05-16 21:37:15,117 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+
+
+[INFO ] 2017-05-16 21:37:15,351 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Tue May 16 21:37:15 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-16 21:37:15,421 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\workspace_neon\e3-manager\e3-manager-web\target\classes\spring\applicationContext-dao.xml]
+
+
+[INFO ] 2017-05-16 21:37:15,693 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\workspace_neon\e3-manager\e3-manager-web\target\classes\spring\applicationContext-service.xml]
+
+
+[INFO ] 2017-05-16 21:37:15,890 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\workspace_neon\e3-manager\e3-manager-web\target\classes\spring\applicationContext-trans.xml]
+
+
+[INFO ] 2017-05-16 21:37:16,432 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\workspace_neon\e3-manager\e3-manager-web\target\classes\properties\db.properties]
+
+
+[INFO ] 2017-05-16 21:37:16,455 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-05-16 21:37:19,367 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 4245 ms
+
+
+[INFO ] 2017-05-16 21:37:19,514 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-manager': initialization started
+
+
+[INFO ] 2017-05-16 21:37:19,523 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-manager-servlet': startup date [Tue May 16 21:37:19 CST 2017]; parent: Root WebApplicationContext
+
+
+[INFO ] 2017-05-16 21:37:19,524 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2017-05-16 21:37:19,756 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-05-16 21:37:20,125 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/item/{itemId}]}" onto public com.e3.pojo.TbItem com.e3.controller.ItemController.getItemById(java.lang.Long)
+
+
+[INFO ] 2017-05-16 21:37:21,467 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-manager-servlet': startup date [Tue May 16 21:37:19 CST 2017]; parent: Root WebApplicationContext
+
+
+[INFO ] 2017-05-16 21:37:21,701 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-manager-servlet': startup date [Tue May 16 21:37:19 CST 2017]; parent: Root WebApplicationContext
+
+
+[INFO ] 2017-05-16 21:37:22,535 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'e3-manager': initialization completed in 3020 ms
+
+
+[WARN ] 2017-05-16 21:37:42,125 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'e3-manager'
+
+
+[INFO ] 2017-05-16 21:37:50,745 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655)
+{dataSource-1} inited
+
+
+[INFO ] 2017-05-16 21:49:52,043 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+
+
+[INFO ] 2017-05-16 21:49:52,262 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Tue May 16 21:49:52 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-16 21:49:52,336 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\workspace_neon\e3\e3-manager\e3-manager-web\target\classes\spring\applicationContext-dao.xml]
+
+
+[INFO ] 2017-05-16 21:49:52,560 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\workspace_neon\e3\e3-manager\e3-manager-web\target\classes\spring\applicationContext-service.xml]
+
+
+[INFO ] 2017-05-16 21:49:52,678 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\workspace_neon\e3\e3-manager\e3-manager-web\target\classes\spring\applicationContext-trans.xml]
+
+
+[INFO ] 2017-05-16 21:49:53,157 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\workspace_neon\e3\e3-manager\e3-manager-web\target\classes\properties\db.properties]
+
+
+[INFO ] 2017-05-16 21:49:53,185 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-05-16 21:49:55,834 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 3785 ms
+
+
+[INFO ] 2017-05-16 21:49:55,923 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-manager': initialization started
+
+
+[INFO ] 2017-05-16 21:49:55,930 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-manager-servlet': startup date [Tue May 16 21:49:55 CST 2017]; parent: Root WebApplicationContext
+
+
+[INFO ] 2017-05-16 21:49:55,934 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2017-05-16 21:49:56,245 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-05-16 21:49:56,729 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/item/{itemId}]}" onto public com.e3.pojo.TbItem com.e3.controller.ItemController.getItemById(java.lang.Long)
+
+
+[INFO ] 2017-05-16 21:49:57,338 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-manager-servlet': startup date [Tue May 16 21:49:55 CST 2017]; parent: Root WebApplicationContext
+
+
+[INFO ] 2017-05-16 21:49:57,490 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-manager-servlet': startup date [Tue May 16 21:49:55 CST 2017]; parent: Root WebApplicationContext
+
+
+[INFO ] 2017-05-16 21:49:57,684 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'e3-manager': initialization completed in 1759 ms
+
+
+[INFO ] 2017-05-16 21:50:15,184 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655)
+{dataSource-1} inited
+
+
+[WARN ] 2017-05-16 21:50:16,865 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'e3-manager'
