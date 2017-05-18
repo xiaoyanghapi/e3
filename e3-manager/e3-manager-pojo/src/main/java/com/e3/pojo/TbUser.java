@@ -1,9 +1,15 @@
 package com.e3.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class TbUser {
-    private Long id;
+public class TbUser  implements Serializable{
+    /**
+	 * @Fields serialVersionUID : TODO(用一句话描述这个变量表示什么)
+	 */
+	private static final long serialVersionUID = 6624015218196939546L;
+
+	private Long id;
 
     private String username;
 

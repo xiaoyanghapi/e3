@@ -1,9 +1,15 @@
 package com.e3.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class TbOrder {
-    private String orderId;
+public class TbOrder  implements Serializable{
+    /**
+	 * @Fields serialVersionUID : TODO(用一句话描述这个变量表示什么)
+	 */
+	private static final long serialVersionUID = 4488681535168301459L;
+
+	private String orderId;
 
     private String payment;
 

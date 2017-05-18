@@ -23,14 +23,14 @@
     	<module>e3-manager-interface</module>
     	<module>e3-manager-service</module>
     </modules>
-        <!-- 添加tomcat插件 -->
+    <!-- 添加tomcat插件 -->
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <configuration>
-                   <port>8080</port>
+                   <port>8081</port>
                    <path>/</path>
                 </configuration>
             </plugin>

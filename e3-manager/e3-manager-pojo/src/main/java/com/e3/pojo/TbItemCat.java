@@ -1,9 +1,15 @@
 package com.e3.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class TbItemCat {
-    private Long id;
+public class TbItemCat  implements Serializable{
+    /**
+	 * @Fields serialVersionUID : TODO(用一句话描述这个变量表示什么)
+	 */
+	private static final long serialVersionUID = 6233659244070722696L;
+
+	private Long id;
 
     private Long parentId;
 

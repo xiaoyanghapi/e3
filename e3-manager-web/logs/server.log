@@ -210,3 +210,2607 @@ FrameworkServlet 'e3-manager': initialization completed in 1759 ms
 
 [WARN ] 2017-05-16 21:50:16,865 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
 No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'e3-manager'
+
+
+[INFO ] 2017-05-18 20:24:14,715 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-manager': initialization started
+
+
+[INFO ] 2017-05-18 20:24:14,767 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 20:24:14 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 20:24:14,813 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[WARN ] 2017-05-18 20:24:15,059 method:org.springframework.util.xml.SimpleSaxErrorHandler.warning(SimpleSaxErrorHandler.java:48)
+Ignored XML validation warning
+org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 122; SchemaLocation: schemaLocation 值 'http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd         http://code.alibabatech.com/schema/dubbo         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd' 必须具有偶数个 URI。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:392)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.storeLocations(XMLSchemaValidator.java:2347)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1754)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:740)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:374)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:613)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3132)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:852)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:510)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[ERROR] 2017-05-18 20:24:18,129 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:502)
+Context initialization failed
+org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 1 in XML document from class path resource [spring/springmvc.xml] is invalid; nested exception is org.xml.sax.SAXParseException; systemId: http://www.springframework.org/schema/mvc/; lineNumber: 1; columnNumber: 55; 在 publicId 和 systemId 之间需要有空格。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:399)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:510)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.xml.sax.SAXParseException; systemId: http://www.springframework.org/schema/mvc/; lineNumber: 1; columnNumber: 55; 在 publicId 和 systemId 之间需要有空格。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanExternalID(XMLScanner.java:1072)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.scanDoctypeDecl(XMLDocumentScannerImpl.java:642)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:924)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:629)
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:685)
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2179)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:576)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:613)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.findSchemaGrammar(XMLSchemaValidator.java:2446)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1767)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:760)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	... 29 more
+
+
+[INFO ] 2017-05-18 20:29:17,195 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-manager': initialization started
+
+
+[INFO ] 2017-05-18 20:29:17,221 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 20:29:17 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 20:29:17,280 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[WARN ] 2017-05-18 20:29:17,339 method:org.springframework.util.xml.SimpleSaxErrorHandler.warning(SimpleSaxErrorHandler.java:48)
+Ignored XML validation warning
+org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 122; SchemaLocation: schemaLocation 值 'http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd         http://code.alibabatech.com/schema/dubbo         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd' 必须具有偶数个 URI。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:392)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.storeLocations(XMLSchemaValidator.java:2347)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1754)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:740)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:374)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:613)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3132)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:852)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:510)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[ERROR] 2017-05-18 20:29:19,327 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:502)
+Context initialization failed
+org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 1 in XML document from class path resource [spring/springmvc.xml] is invalid; nested exception is org.xml.sax.SAXParseException; systemId: http://www.springframework.org/schema/mvc/; lineNumber: 1; columnNumber: 55; 在 publicId 和 systemId 之间需要有空格。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:399)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:510)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.xml.sax.SAXParseException; systemId: http://www.springframework.org/schema/mvc/; lineNumber: 1; columnNumber: 55; 在 publicId 和 systemId 之间需要有空格。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanExternalID(XMLScanner.java:1072)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.scanDoctypeDecl(XMLDocumentScannerImpl.java:642)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:924)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:629)
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:685)
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2179)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:576)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:613)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.findSchemaGrammar(XMLSchemaValidator.java:2446)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1767)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:760)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	... 29 more
+
+
+[INFO ] 2017-05-18 20:31:53,854 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-manager': initialization started
+
+
+[INFO ] 2017-05-18 20:31:53,919 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 20:31:53 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 20:31:54,109 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[ERROR] 2017-05-18 20:31:54,343 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:502)
+Context initialization failed
+org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 17 in XML document from class path resource [spring/springmvc.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 17; columnNumber: 85; cvc-complex-type.3.2.2: 元素 'dubbo:reference' 中不允许出现属性 'ref'。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:399)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:510)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 17; columnNumber: 85; cvc-complex-type.3.2.2: 元素 'dubbo:reference' 中不允许出现属性 'ref'。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3230)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.processAttributes(XMLSchemaValidator.java:2707)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:2050)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:760)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	... 29 more
+
+
+[INFO ] 2017-05-18 20:36:38,041 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-manager': initialization started
+
+
+[INFO ] 2017-05-18 20:36:38,076 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 20:36:38 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 20:36:38,122 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[ERROR] 2017-05-18 20:36:38,344 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:502)
+Context initialization failed
+org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 17 in XML document from class path resource [spring/springmvc.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 17; columnNumber: 85; cvc-complex-type.3.2.2: 元素 'dubbo:reference' 中不允许出现属性 'ref'。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:399)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:510)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 17; columnNumber: 85; cvc-complex-type.3.2.2: 元素 'dubbo:reference' 中不允许出现属性 'ref'。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3230)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.processAttributes(XMLSchemaValidator.java:2707)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:2050)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:760)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	... 29 more
+
+
+[INFO ] 2017-05-18 20:40:45,790 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-manager': initialization started
+
+
+[INFO ] 2017-05-18 20:40:45,822 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 20:40:45 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 20:40:45,868 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2017-05-18 20:40:46,111 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-05-18 20:40:46,517 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-05-18 20:40:46,957 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-05-18 20:40:46,984 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-05-18 20:40:46,985 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=xiaoyanghapi
+
+
+[INFO ] 2017-05-18 20:40:46,985 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_121
+
+
+[INFO ] 2017-05-18 20:40:46,985 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-05-18 20:40:46,986 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=E:\java\java\jdk1.8\jre
+
+
+[INFO ] 2017-05-18 20:40:46,986 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=/E:/software/eclipse/eclipse-neon/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2017-05-18 20:40:46,986 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=E:\java\java\jdk1.8\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;E:\java\java\jdk1.8\jre\bin;E:/java/java/jdk1.8/bin/../jre/bin/server;E:/java/java/jdk1.8/bin/../jre/bin;E:/java/java/jdk1.8/bin/../jre/lib/amd64;D:\app\oracle\product\instantclient_11_2;D:\app\oracle\product\11.2.0\dbhome_1\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\java\java\jdk1.8\bin;E:\software\Git\Git\cmd;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files\TortoiseGit\bin;;E:\software\eclipse\eclipse-neon\eclipse;;.
+
+
+[INFO ] 2017-05-18 20:40:46,987 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\景江\AppData\Local\Temp\
+
+
+[INFO ] 2017-05-18 20:40:46,988 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-05-18 20:40:46,988 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 8.1
+
+
+[INFO ] 2017-05-18 20:40:46,995 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-05-18 20:40:46,997 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.3
+
+
+[INFO ] 2017-05-18 20:40:46,998 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=景江
+
+
+[INFO ] 2017-05-18 20:40:46,999 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\景江
+
+
+[INFO ] 2017-05-18 20:40:46,999 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\workspace_neon\e3\e3-manager-web
+
+
+[INFO ] 2017-05-18 20:40:47,001 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.31.101:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@159fdcfb
+
+
+[INFO ] 2017-05-18 20:40:47,040 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 20:41:08,137 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 20:41:09,256 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 20:41:30,254 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 20:41:31,355 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 20:41:52,352 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 20:41:53,454 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 20:42:14,456 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 20:42:15,558 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 20:42:36,551 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 20:42:37,653 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 20:42:58,660 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 20:42:59,764 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-05-18 20:50:37,819 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-manager': initialization started
+
+
+[INFO ] 2017-05-18 20:50:37,848 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 20:50:37 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 20:50:37,890 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2017-05-18 20:50:38,151 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-05-18 20:50:38,678 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-05-18 20:50:39,283 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\景江\.dubbo\dubbo-registry-192.168.31.101.cache, data: {com.e3.service.ItemService=empty://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=4092&side=provider&timestamp=1495111817238}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-05-18 20:50:39,535 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-05-18 20:50:39,557 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-05-18 20:50:39,558 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=xiaoyanghapi
+
+
+[INFO ] 2017-05-18 20:50:39,559 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_121
+
+
+[INFO ] 2017-05-18 20:50:39,559 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-05-18 20:50:39,560 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=E:\java\java\jdk1.8\jre
+
+
+[INFO ] 2017-05-18 20:50:39,560 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=/E:/software/eclipse/eclipse-neon/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2017-05-18 20:50:39,560 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=E:\java\java\jdk1.8\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;E:/java/java/jdk1.8/bin/../jre/bin/server;E:/java/java/jdk1.8/bin/../jre/bin;E:/java/java/jdk1.8/bin/../jre/lib/amd64;D:\app\oracle\product\instantclient_11_2;D:\app\oracle\product\11.2.0\dbhome_1\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\java\java\jdk1.8\bin;E:\software\Git\Git\cmd;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files\TortoiseGit\bin;;E:\software\eclipse\eclipse-neon\eclipse;;.
+
+
+[INFO ] 2017-05-18 20:50:39,561 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\景江\AppData\Local\Temp\
+
+
+[INFO ] 2017-05-18 20:50:39,562 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-05-18 20:50:39,567 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 8.1
+
+
+[INFO ] 2017-05-18 20:50:39,570 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-05-18 20:50:39,570 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.3
+
+
+[INFO ] 2017-05-18 20:50:39,571 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=景江
+
+
+[INFO ] 2017-05-18 20:50:39,572 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\景江
+
+
+[INFO ] 2017-05-18 20:50:39,572 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\workspace_neon\e3\e3-manager-web
+
+
+[INFO ] 2017-05-18 20:50:39,574 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.31.101:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@198aec39
+
+
+[INFO ] 2017-05-18 20:50:39,623 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-05-18 20:50:39,627 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.31.101/192.168.31.101:2181, initiating session
+
+
+[INFO ] 2017-05-18 20:50:39,748 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.31.101/192.168.31.101:2181, sessionid = 0x15c1b79b3bb0002, negotiated timeout = 30000
+
+
+[INFO ] 2017-05-18 20:50:39,751 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-05-18 20:50:39,796 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=consumers&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=5284&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495111839161, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 20:50:39,985 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=5284&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495111839161, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 20:50:40,702 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=5284&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495111839161, urls: [dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=4092&side=provider&timestamp=1495111817238, empty://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=5284&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495111839161, empty://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=5284&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495111839161], dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 20:50:41,387 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.178.1:20880 from NettyClient 192.168.178.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x3e0bff48, /192.168.178.1:59642 => /192.168.178.1:20880]], dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 20:50:41,551 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient xiaoyanghapi/192.168.178.1 connect to the server /192.168.178.1:20880, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 20:50:41,681 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.e3.service.ItemService from url zookeeper://192.168.31.101:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=e3-manager-web&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=5284&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495111839161, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 20:50:48,837 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/item/{itemId}]}" onto public com.e3.pojo.TbItem com.e3.controller.ItemController.getItemById(java.lang.Long)
+
+
+[INFO ] 2017-05-18 20:50:52,487 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 20:50:37 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 20:50:52,591 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 20:50:37 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 20:50:52,775 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'e3-manager': initialization completed in 14953 ms
+
+
+[WARN ] 2017-05-18 20:51:13,143 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'e3-manager'
+
+
+[WARN ] 2017-05-18 20:51:27,074 method:com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.received(DefaultFuture.java:242)
+ [DUBBO] The timeout response finally returned at 2017-05-18 20:51:27.074, response Response [id=2, version=null, status=20, event=false, error=null, result=RpcResult [result=com.e3.pojo.TbItem@19d18b95, exception=null]], channel: /192.168.178.1:59642 -> /192.168.178.1:20880, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[WARN ] 2017-05-18 20:51:27,075 method:com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.received(DefaultFuture.java:242)
+ [DUBBO] The timeout response finally returned at 2017-05-18 20:51:27.074, response Response [id=0, version=null, status=20, event=false, error=null, result=RpcResult [result=com.e3.pojo.TbItem@180b8155, exception=null]], channel: /192.168.178.1:59642 -> /192.168.178.1:20880, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[WARN ] 2017-05-18 20:51:27,074 method:com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.received(DefaultFuture.java:242)
+ [DUBBO] The timeout response finally returned at 2017-05-18 20:51:27.074, response Response [id=1, version=null, status=20, event=false, error=null, result=RpcResult [result=com.e3.pojo.TbItem@36d2a83e, exception=null]], channel: /192.168.178.1:59642 -> /192.168.178.1:20880, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 20:52:36,147 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.178.1:20880,url:dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.e3.service.ItemService&methods=getItemById&pid=5284&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495111839161, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[WARN ] 2017-05-18 20:52:38,368 method:com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:160)
+ [DUBBO] client reconnect to 192.168.178.1:20880 find error . url: dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.e3.service.ItemService&methods=getItemById&pid=5284&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495111839161, dubbo version: 2.5.3, current host: 192.168.178.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.e3.service.ItemService&methods=getItemById&pid=5284&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495111839161) failed to connect to server /192.168.178.1:20880, error message is:connection timed out: /192.168.178.1:20880
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.netty.channel.ConnectTimeoutException: connection timed out: /192.168.178.1:20880
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	... 3 more
+
+
+[INFO ] 2017-05-18 20:53:51,134 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-manager': initialization started
+
+
+[INFO ] 2017-05-18 20:53:51,162 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 20:53:51 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 20:53:51,225 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2017-05-18 20:53:51,579 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-05-18 20:53:52,135 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-05-18 20:53:53,075 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\景江\.dubbo\dubbo-registry-192.168.31.101.cache, data: {com.e3.service.ItemService=empty://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=11080&side=provider&timestamp=1495112010081}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-05-18 20:53:53,251 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-05-18 20:53:53,280 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-05-18 20:53:53,281 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=xiaoyanghapi
+
+
+[INFO ] 2017-05-18 20:53:53,301 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_121
+
+
+[INFO ] 2017-05-18 20:53:53,301 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-05-18 20:53:53,302 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=E:\java\java\jdk1.8\jre
+
+
+[INFO ] 2017-05-18 20:53:53,302 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=/E:/software/eclipse/eclipse-neon/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2017-05-18 20:53:53,303 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=E:\java\java\jdk1.8\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;E:/java/java/jdk1.8/bin/../jre/bin/server;E:/java/java/jdk1.8/bin/../jre/bin;E:/java/java/jdk1.8/bin/../jre/lib/amd64;D:\app\oracle\product\instantclient_11_2;D:\app\oracle\product\11.2.0\dbhome_1\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\java\java\jdk1.8\bin;E:\software\Git\Git\cmd;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files\TortoiseGit\bin;;E:\software\eclipse\eclipse-neon\eclipse;;.
+
+
+[INFO ] 2017-05-18 20:53:53,305 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\景江\AppData\Local\Temp\
+
+
+[INFO ] 2017-05-18 20:53:53,310 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-05-18 20:53:53,322 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 8.1
+
+
+[INFO ] 2017-05-18 20:53:53,325 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-05-18 20:53:53,326 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.3
+
+
+[INFO ] 2017-05-18 20:53:53,327 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=景江
+
+
+[INFO ] 2017-05-18 20:53:53,331 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\景江
+
+
+[INFO ] 2017-05-18 20:53:53,332 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\workspace_neon\e3\e3-manager-web
+
+
+[INFO ] 2017-05-18 20:53:53,335 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.31.101:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@6b13de5d
+
+
+[INFO ] 2017-05-18 20:53:53,468 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-05-18 20:53:53,474 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.31.101/192.168.31.101:2181, initiating session
+
+
+[INFO ] 2017-05-18 20:53:53,517 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.31.101/192.168.31.101:2181, sessionid = 0x15c1b79b3bb0004, negotiated timeout = 30000
+
+
+[INFO ] 2017-05-18 20:53:53,521 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-05-18 20:53:53,580 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=consumers&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=6188&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112032833, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 20:53:54,207 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=6188&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112032833, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 20:53:55,644 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=6188&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112032833, urls: [dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=11080&side=provider&timestamp=1495112010081, empty://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=6188&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112032833, empty://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=6188&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112032833], dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 20:53:55,974 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.178.1:20880 from NettyClient 192.168.178.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x858a4e45, /192.168.178.1:59799 => /192.168.178.1:20880]], dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 20:53:55,975 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient xiaoyanghapi/192.168.178.1 connect to the server /192.168.178.1:20880, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 20:53:56,095 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.e3.service.ItemService from url zookeeper://192.168.31.101:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=e3-manager-web&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=6188&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112032833, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 20:53:56,501 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/item/{itemId}]}" onto public com.e3.pojo.TbItem com.e3.controller.ItemController.getItemById(java.lang.Long)
+
+
+[INFO ] 2017-05-18 20:53:57,080 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 20:53:51 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 20:53:57,171 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 20:53:51 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 20:53:57,411 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'e3-manager': initialization completed in 6274 ms
+
+
+[INFO ] 2017-05-18 20:57:25,788 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.178.1:20880,url:dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.e3.service.ItemService&methods=getItemById&pid=6188&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112032833, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[WARN ] 2017-05-18 20:57:26,984 method:com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:160)
+ [DUBBO] client reconnect to 192.168.178.1:20880 find error . url: dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.e3.service.ItemService&methods=getItemById&pid=6188&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112032833, dubbo version: 2.5.3, current host: 192.168.178.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.e3.service.ItemService&methods=getItemById&pid=6188&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112032833) failed to connect to server /192.168.178.1:20880, error message is:connection timed out: /192.168.178.1:20880
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.netty.channel.ConnectTimeoutException: connection timed out: /192.168.178.1:20880
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	... 3 more
+
+
+[INFO ] 2017-05-18 21:02:23,860 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-manager': initialization started
+
+
+[INFO ] 2017-05-18 21:02:23,902 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 21:02:23 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 21:02:23,964 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2017-05-18 21:02:24,233 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-05-18 21:02:24,712 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-05-18 21:02:25,238 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\景江\.dubbo\dubbo-registry-192.168.31.101.cache, data: {com.e3.service.ItemService=empty://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=5216&side=provider&timestamp=1495112516358}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-05-18 21:02:25,281 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-05-18 21:02:25,314 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-05-18 21:02:25,314 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=xiaoyanghapi
+
+
+[INFO ] 2017-05-18 21:02:25,315 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_121
+
+
+[INFO ] 2017-05-18 21:02:25,315 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-05-18 21:02:25,315 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=E:\java\java\jdk1.8\jre
+
+
+[INFO ] 2017-05-18 21:02:25,316 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=/E:/software/eclipse/eclipse-neon/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2017-05-18 21:02:25,316 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=E:\java\java\jdk1.8\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;E:\java\java\jdk1.8\jre\bin;E:/java/java/jdk1.8/bin/../jre/bin/server;E:/java/java/jdk1.8/bin/../jre/bin;E:/java/java/jdk1.8/bin/../jre/lib/amd64;D:\app\oracle\product\instantclient_11_2;D:\app\oracle\product\11.2.0\dbhome_1\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\java\java\jdk1.8\bin;E:\software\Git\Git\cmd;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files\TortoiseGit\bin;;E:\software\eclipse\eclipse-neon\eclipse;;.
+
+
+[INFO ] 2017-05-18 21:02:25,316 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\景江\AppData\Local\Temp\
+
+
+[INFO ] 2017-05-18 21:02:25,317 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-05-18 21:02:25,318 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 8.1
+
+
+[INFO ] 2017-05-18 21:02:25,319 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-05-18 21:02:25,319 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.3
+
+
+[INFO ] 2017-05-18 21:02:25,320 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=景江
+
+
+[INFO ] 2017-05-18 21:02:25,320 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\景江
+
+
+[INFO ] 2017-05-18 21:02:25,320 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\workspace_neon\e3\e3-manager-web
+
+
+[INFO ] 2017-05-18 21:02:25,323 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.31.101:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@7202b69c
+
+
+[INFO ] 2017-05-18 21:02:25,368 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-05-18 21:02:25,372 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.31.101/192.168.31.101:2181, initiating session
+
+
+[INFO ] 2017-05-18 21:02:25,382 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.31.101/192.168.31.101:2181, sessionid = 0x15c1b79b3bb0007, negotiated timeout = 30000
+
+
+[INFO ] 2017-05-18 21:02:25,385 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-05-18 21:02:25,415 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=consumers&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=8156&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112545122, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:02:25,449 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=8156&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112545122, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:02:25,499 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=8156&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112545122, urls: [dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=5216&side=provider&timestamp=1495112516358, empty://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=8156&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112545122, empty://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=8156&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112545122], dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:02:25,783 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.178.1:20880 from NettyClient 192.168.178.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x00771b8e, /192.168.178.1:60038 => /192.168.178.1:20880]], dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:02:25,784 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient xiaoyanghapi/192.168.178.1 connect to the server /192.168.178.1:20880, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:02:25,905 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.e3.service.ItemService from url zookeeper://192.168.31.101:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=e3-manager-web&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=8156&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112545122, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:02:26,416 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/item/{itemId}]}" onto public com.e3.pojo.TbItem com.e3.controller.ItemController.getItemById(java.lang.Long)
+
+
+[INFO ] 2017-05-18 21:02:27,295 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 21:02:23 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 21:02:27,496 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 21:02:23 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 21:02:28,002 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'e3-manager': initialization completed in 4138 ms
+
+
+[ERROR] 2017-05-18 21:02:50,674 method:com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:181)
+ [DUBBO] Dubbo client can not supported string message:  in channel: NettyChannel [channel=[id: 0x00771b8e, /192.168.178.1:60038 => /192.168.178.1:20880]], url: dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.e3.service.ItemService&methods=getItemById&pid=8156&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112545122, dubbo version: 2.5.3, current host: 192.168.178.1
+java.lang.Exception: Dubbo client can not supported string message:  in channel: NettyChannel [channel=[id: 0x00771b8e, /192.168.178.1:60038 => /192.168.178.1:20880]], url: dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.e3.service.ItemService&methods=getItemById&pid=8156&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112545122
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:180)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[ERROR] 2017-05-18 21:02:50,689 method:com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:181)
+ [DUBBO] Dubbo client can not supported string message:  in channel: NettyChannel [channel=[id: 0x00771b8e, /192.168.178.1:60038 => /192.168.178.1:20880]], url: dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.e3.service.ItemService&methods=getItemById&pid=8156&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112545122, dubbo version: 2.5.3, current host: 192.168.178.1
+java.lang.Exception: Dubbo client can not supported string message:  in channel: NettyChannel [channel=[id: 0x00771b8e, /192.168.178.1:60038 => /192.168.178.1:20880]], url: dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.e3.service.ItemService&methods=getItemById&pid=8156&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112545122
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:180)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[ERROR] 2017-05-18 21:02:50,702 method:com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:181)
+ [DUBBO] Dubbo client can not supported string message:  in channel: NettyChannel [channel=[id: 0x00771b8e, /192.168.178.1:60038 => /192.168.178.1:20880]], url: dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.e3.service.ItemService&methods=getItemById&pid=8156&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112545122, dubbo version: 2.5.3, current host: 192.168.178.1
+java.lang.Exception: Dubbo client can not supported string message:  in channel: NettyChannel [channel=[id: 0x00771b8e, /192.168.178.1:60038 => /192.168.178.1:20880]], url: dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.e3.service.ItemService&methods=getItemById&pid=8156&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112545122
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:180)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[INFO ] 2017-05-18 21:07:05,652 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-manager': initialization started
+
+
+[INFO ] 2017-05-18 21:07:05,707 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 21:07:05 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 21:07:05,788 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2017-05-18 21:07:06,126 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-05-18 21:07:06,637 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-05-18 21:07:07,317 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\景江\.dubbo\dubbo-registry-192.168.31.101.cache, data: {com.e3.service.ItemService=empty://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=8668&side=provider&timestamp=1495112797603}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-05-18 21:07:07,362 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-05-18 21:07:07,405 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-05-18 21:07:07,406 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=xiaoyanghapi
+
+
+[INFO ] 2017-05-18 21:07:07,407 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_121
+
+
+[INFO ] 2017-05-18 21:07:07,408 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-05-18 21:07:07,408 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=E:\java\java\jdk1.8\jre
+
+
+[INFO ] 2017-05-18 21:07:07,408 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=/E:/software/eclipse/eclipse-neon/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2017-05-18 21:07:07,409 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=E:\java\java\jdk1.8\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;E:\java\java\jdk1.8\jre\bin;E:/java/java/jdk1.8/bin/../jre/bin/server;E:/java/java/jdk1.8/bin/../jre/bin;E:/java/java/jdk1.8/bin/../jre/lib/amd64;D:\app\oracle\product\instantclient_11_2;D:\app\oracle\product\11.2.0\dbhome_1\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\java\java\jdk1.8\bin;E:\software\Git\Git\cmd;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files\TortoiseGit\bin;;E:\software\eclipse\eclipse-neon\eclipse;;.
+
+
+[INFO ] 2017-05-18 21:07:07,410 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\景江\AppData\Local\Temp\
+
+
+[INFO ] 2017-05-18 21:07:07,410 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-05-18 21:07:07,412 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 8.1
+
+
+[INFO ] 2017-05-18 21:07:07,414 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-05-18 21:07:07,414 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.3
+
+
+[INFO ] 2017-05-18 21:07:07,415 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=景江
+
+
+[INFO ] 2017-05-18 21:07:07,415 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\景江
+
+
+[INFO ] 2017-05-18 21:07:07,416 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\workspace_neon\e3\e3-manager-web
+
+
+[INFO ] 2017-05-18 21:07:07,420 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.31.101:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@1836ce3e
+
+
+[INFO ] 2017-05-18 21:07:07,478 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-05-18 21:07:07,482 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.31.101/192.168.31.101:2181, initiating session
+
+
+[INFO ] 2017-05-18 21:07:07,494 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.31.101/192.168.31.101:2181, sessionid = 0x15c1b79b3bb000a, negotiated timeout = 30000
+
+
+[INFO ] 2017-05-18 21:07:07,497 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-05-18 21:07:07,535 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=consumers&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=4044&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112827204, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:07:07,610 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=4044&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112827204, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:07:07,777 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=4044&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112827204, urls: [dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=8668&side=provider&timestamp=1495112797603, empty://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=4044&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112827204, empty://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=4044&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112827204], dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:07:08,102 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.178.1:20880 from NettyClient 192.168.178.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xee7ea263, /192.168.178.1:60112 => /192.168.178.1:20880]], dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:07:08,103 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient xiaoyanghapi/192.168.178.1 connect to the server /192.168.178.1:20880, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:07:08,224 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.e3.service.ItemService from url zookeeper://192.168.31.101:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=e3-manager-web&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=4044&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495112827204, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:07:08,714 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/item/{itemId}]}" onto public com.e3.pojo.TbItem com.e3.controller.ItemController.getItemById(java.lang.Long)
+
+
+[INFO ] 2017-05-18 21:07:09,628 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 21:07:05 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 21:07:09,882 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 21:07:05 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 21:07:10,545 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'e3-manager': initialization completed in 4887 ms
+
+
+[INFO ] 2017-05-18 21:13:48,570 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-manager': initialization started
+
+
+[INFO ] 2017-05-18 21:13:48,606 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 21:13:48 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 21:13:48,665 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2017-05-18 21:13:49,002 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-05-18 21:13:49,523 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-05-18 21:13:50,586 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\景江\.dubbo\dubbo-registry-192.168.31.101.cache, data: {com.e3.service.ItemService=empty://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=10648&side=provider&timestamp=1495113216966}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-05-18 21:13:50,622 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-05-18 21:13:50,652 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-05-18 21:13:50,653 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=xiaoyanghapi
+
+
+[INFO ] 2017-05-18 21:13:50,653 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_121
+
+
+[INFO ] 2017-05-18 21:13:50,654 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-05-18 21:13:50,654 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=E:\java\java\jdk1.8\jre
+
+
+[INFO ] 2017-05-18 21:13:50,654 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=/E:/software/eclipse/eclipse-neon/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2017-05-18 21:13:50,655 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=E:\java\java\jdk1.8\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;E:\java\java\jdk1.8\jre\bin;E:/java/java/jdk1.8/bin/../jre/bin/server;E:/java/java/jdk1.8/bin/../jre/bin;E:/java/java/jdk1.8/bin/../jre/lib/amd64;D:\app\oracle\product\instantclient_11_2;D:\app\oracle\product\11.2.0\dbhome_1\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\java\java\jdk1.8\bin;E:\software\Git\Git\cmd;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files\TortoiseGit\bin;;E:\software\eclipse\eclipse-neon\eclipse;;.
+
+
+[INFO ] 2017-05-18 21:13:50,655 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\景江\AppData\Local\Temp\
+
+
+[INFO ] 2017-05-18 21:13:50,655 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-05-18 21:13:50,656 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 8.1
+
+
+[INFO ] 2017-05-18 21:13:50,658 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-05-18 21:13:50,658 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.3
+
+
+[INFO ] 2017-05-18 21:13:50,659 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=景江
+
+
+[INFO ] 2017-05-18 21:13:50,659 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\景江
+
+
+[INFO ] 2017-05-18 21:13:50,659 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\workspace_neon\e3\e3-manager-web
+
+
+[INFO ] 2017-05-18 21:13:50,661 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.31.101:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@744f5331
+
+
+[INFO ] 2017-05-18 21:13:50,716 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-05-18 21:13:50,720 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.31.101/192.168.31.101:2181, initiating session
+
+
+[INFO ] 2017-05-18 21:13:50,731 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.31.101/192.168.31.101:2181, sessionid = 0x15c1b79b3bb000c, negotiated timeout = 30000
+
+
+[INFO ] 2017-05-18 21:13:50,735 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-05-18 21:13:50,781 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=consumers&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=3968&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495113230325, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:13:50,826 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=3968&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495113230325, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:13:50,883 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=3968&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495113230325, urls: [dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=10648&side=provider&timestamp=1495113216966, empty://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=3968&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495113230325, empty://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=3968&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495113230325], dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:13:51,214 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.178.1:20880 from NettyClient 192.168.178.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x0c489f1b, /192.168.178.1:60176 => /192.168.178.1:20880]], dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:13:51,215 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient xiaoyanghapi/192.168.178.1 connect to the server /192.168.178.1:20880, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:13:51,394 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.e3.service.ItemService from url zookeeper://192.168.31.101:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=e3-manager-web&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=3968&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495113230325, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:13:52,157 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/item/{itemId}]}" onto public com.e3.pojo.TbItem com.e3.controller.ItemController.getItemById(java.lang.Long)
+
+
+[INFO ] 2017-05-18 21:13:53,031 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 21:13:48 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 21:13:53,353 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 21:13:48 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 21:13:54,411 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'e3-manager': initialization completed in 5837 ms
+
+
+[WARN ] 2017-05-18 21:14:51,232 method:com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.received(DefaultFuture.java:242)
+ [DUBBO] The timeout response finally returned at 2017-05-18 21:14:51.232, response Response [id=0, version=null, status=20, event=false, error=null, result=RpcResult [result=com.e3.pojo.TbItem@636d368c, exception=null]], channel: /192.168.178.1:60176 -> /192.168.178.1:20880, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:15:49,069 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.178.1:20880,url:dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.e3.service.ItemService&methods=getItemById&pid=3968&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495113230325, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:20:55,695 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-manager': initialization started
+
+
+[INFO ] 2017-05-18 21:20:55,732 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 21:20:55 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 21:20:55,779 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2017-05-18 21:20:56,061 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-05-18 21:20:56,483 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-05-18 21:20:57,178 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\景江\.dubbo\dubbo-registry-192.168.31.101.cache, data: {com.e3.service.ItemService=empty://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=6196&side=provider&timeout=60000&timestamp=1495113627073}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-05-18 21:20:57,219 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-05-18 21:20:57,284 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-05-18 21:20:57,285 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=xiaoyanghapi
+
+
+[INFO ] 2017-05-18 21:20:57,285 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_121
+
+
+[INFO ] 2017-05-18 21:20:57,286 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-05-18 21:20:57,286 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=E:\java\java\jdk1.8\jre
+
+
+[INFO ] 2017-05-18 21:20:57,287 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=/E:/software/eclipse/eclipse-neon/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2017-05-18 21:20:57,287 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=E:\java\java\jdk1.8\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;E:\java\java\jdk1.8\jre\bin;E:/java/java/jdk1.8/bin/../jre/bin/server;E:/java/java/jdk1.8/bin/../jre/bin;E:/java/java/jdk1.8/bin/../jre/lib/amd64;D:\app\oracle\product\instantclient_11_2;D:\app\oracle\product\11.2.0\dbhome_1\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\java\java\jdk1.8\bin;E:\software\Git\Git\cmd;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files\TortoiseGit\bin;;E:\software\eclipse\eclipse-neon\eclipse;;.
+
+
+[INFO ] 2017-05-18 21:20:57,289 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\景江\AppData\Local\Temp\
+
+
+[INFO ] 2017-05-18 21:20:57,290 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-05-18 21:20:57,294 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 8.1
+
+
+[INFO ] 2017-05-18 21:20:57,296 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-05-18 21:20:57,297 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.3
+
+
+[INFO ] 2017-05-18 21:20:57,297 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=景江
+
+
+[INFO ] 2017-05-18 21:20:57,298 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\景江
+
+
+[INFO ] 2017-05-18 21:20:57,298 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\workspace_neon\e3\e3-manager-web
+
+
+[INFO ] 2017-05-18 21:20:57,301 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.31.101:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@84ea035
+
+
+[INFO ] 2017-05-18 21:20:57,380 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-05-18 21:20:57,383 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.31.101/192.168.31.101:2181, initiating session
+
+
+[INFO ] 2017-05-18 21:20:57,627 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.31.101/192.168.31.101:2181, sessionid = 0x15c1b79b3bb000e, negotiated timeout = 30000
+
+
+[INFO ] 2017-05-18 21:20:57,631 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-05-18 21:20:57,697 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=consumers&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=9812&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495113657070, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:20:57,753 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=9812&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495113657070, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:20:57,884 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=9812&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495113657070, urls: [dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=6196&side=provider&timeout=60000&timestamp=1495113627073, empty://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=9812&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495113657070, empty://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=9812&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495113657070], dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:20:58,230 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.178.1:20880 from NettyClient 192.168.178.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x9951e917, /192.168.178.1:60292 => /192.168.178.1:20880]], dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:20:58,231 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient xiaoyanghapi/192.168.178.1 connect to the server /192.168.178.1:20880, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:20:58,459 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.e3.service.ItemService from url zookeeper://192.168.31.101:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=e3-manager-web&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=9812&revision=0.0.1-SNAPSHOT&side=consumer&timeout=60000&timestamp=1495113657070, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:20:59,341 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/item/{itemId}]}" onto public com.e3.pojo.TbItem com.e3.controller.ItemController.getItemById(java.lang.Long)
+
+
+[INFO ] 2017-05-18 21:21:00,530 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 21:20:55 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 21:21:00,771 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 21:20:55 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 21:21:01,564 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'e3-manager': initialization completed in 5864 ms
+
+
+[INFO ] 2017-05-18 21:22:44,960 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.178.1:20880,url:dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.e3.service.ItemService&methods=getItemById&pid=9812&revision=0.0.1-SNAPSHOT&side=consumer&timeout=60000&timestamp=1495113657070, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[WARN ] 2017-05-18 21:22:47,339 method:com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:160)
+ [DUBBO] client reconnect to 192.168.178.1:20880 find error . url: dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.e3.service.ItemService&methods=getItemById&pid=9812&revision=0.0.1-SNAPSHOT&side=consumer&timeout=60000&timestamp=1495113657070, dubbo version: 2.5.3, current host: 192.168.178.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.e3.service.ItemService&methods=getItemById&pid=9812&revision=0.0.1-SNAPSHOT&side=consumer&timeout=60000&timestamp=1495113657070) failed to connect to server /192.168.178.1:20880, error message is:Connection refused: no further information: /192.168.178.1:20880
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: no further information: /192.168.178.1:20880
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	... 3 more
+
+
+[INFO ] 2017-05-18 21:23:09,676 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=9812&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495113657070, urls: [empty://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=providers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=9812&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495113657070], dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:26:46,039 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-manager': initialization started
+
+
+[INFO ] 2017-05-18 21:26:46,075 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 21:26:46 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 21:26:46,123 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2017-05-18 21:26:46,470 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-05-18 21:26:46,924 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-05-18 21:26:47,463 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\景江\.dubbo\dubbo-registry-192.168.31.101.cache, data: {com.e3.service.ItemService=empty://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=5216&side=provider&timeout=60000&timestamp=1495113977627}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-05-18 21:26:47,497 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-05-18 21:26:47,533 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-05-18 21:26:47,533 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=xiaoyanghapi
+
+
+[INFO ] 2017-05-18 21:26:47,534 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_121
+
+
+[INFO ] 2017-05-18 21:26:47,534 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-05-18 21:26:47,535 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=E:\java\java\jdk1.8\jre
+
+
+[INFO ] 2017-05-18 21:26:47,535 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=/E:/software/eclipse/eclipse-neon/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2017-05-18 21:26:47,535 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=E:\java\java\jdk1.8\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;E:\java\java\jdk1.8\jre\bin;E:/java/java/jdk1.8/bin/../jre/bin/server;E:/java/java/jdk1.8/bin/../jre/bin;E:/java/java/jdk1.8/bin/../jre/lib/amd64;D:\app\oracle\product\instantclient_11_2;D:\app\oracle\product\11.2.0\dbhome_1\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\java\java\jdk1.8\bin;E:\software\Git\Git\cmd;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files\TortoiseGit\bin;;E:\software\eclipse\eclipse-neon\eclipse;;.
+
+
+[INFO ] 2017-05-18 21:26:47,536 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\景江\AppData\Local\Temp\
+
+
+[INFO ] 2017-05-18 21:26:47,536 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-05-18 21:26:47,537 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 8.1
+
+
+[INFO ] 2017-05-18 21:26:47,538 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-05-18 21:26:47,538 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.3
+
+
+[INFO ] 2017-05-18 21:26:47,538 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=景江
+
+
+[INFO ] 2017-05-18 21:26:47,539 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\景江
+
+
+[INFO ] 2017-05-18 21:26:47,539 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\workspace_neon\e3\e3-manager-web
+
+
+[INFO ] 2017-05-18 21:26:47,541 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.31.101:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@36e7e817
+
+
+[INFO ] 2017-05-18 21:26:47,590 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-05-18 21:26:47,595 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.31.101/192.168.31.101:2181, initiating session
+
+
+[INFO ] 2017-05-18 21:26:47,606 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.31.101/192.168.31.101:2181, sessionid = 0x15c1b79b3bb0011, negotiated timeout = 30000
+
+
+[INFO ] 2017-05-18 21:26:47,610 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-05-18 21:26:47,648 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=consumers&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=6196&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495114007365, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:26:47,733 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=6196&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495114007365, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:26:47,896 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=6196&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495114007365, urls: [dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=5216&side=provider&timeout=60000&timestamp=1495113977627, empty://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=6196&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495114007365, empty://192.168.178.1/com.e3.service.ItemService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=6196&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1495114007365], dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:26:48,475 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.178.1:20880 from NettyClient 192.168.178.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xddff1829, /192.168.178.1:60597 => /192.168.178.1:20880]], dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:26:48,476 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient xiaoyanghapi/192.168.178.1 connect to the server /192.168.178.1:20880, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:26:48,822 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.e3.service.ItemService from url zookeeper://192.168.31.101:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=e3-manager-web&check=false&dubbo=2.5.3&interface=com.e3.service.ItemService&methods=getItemById&pid=6196&revision=0.0.1-SNAPSHOT&side=consumer&timeout=60000&timestamp=1495114007365, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[INFO ] 2017-05-18 21:26:49,460 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/item/{itemId}]}" onto public com.e3.pojo.TbItem com.e3.controller.ItemController.getItemById(java.lang.Long)
+
+
+[INFO ] 2017-05-18 21:26:50,191 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 21:26:46 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 21:26:50,365 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-manager-servlet': startup date [Thu May 18 21:26:46 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-05-18 21:26:50,975 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'e3-manager': initialization completed in 4932 ms
+
+
+[INFO ] 2017-05-18 21:57:02,392 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1158)
+Unable to read additional data from server sessionid 0x15c1b79b3bb0011, likely server has closed socket, closing socket connection and attempting reconnect
+
+
+[INFO ] 2017-05-18 21:57:02,493 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (Disconnected)
+
+
+[INFO ] 2017-05-18 21:57:03,869 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:04,884 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:57:06,159 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:07,164 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:57:08,293 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:09,297 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:57:10,703 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:11,709 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:57:13,464 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:14,518 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:57:16,031 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:17,038 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:57:19,079 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:20,082 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:57:21,549 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:22,570 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:57:24,323 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:25,326 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:57:27,286 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:28,287 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:57:30,005 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:31,009 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:57:33,048 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:34,052 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:57:35,868 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:36,871 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:57:38,242 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:39,245 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:57:41,190 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:42,194 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:57:44,210 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:45,214 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:57:46,546 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:47,550 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:57:48,917 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:49,912 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:57:51,862 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:52,868 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:57:54,964 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:55,967 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:57:57,634 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:57:58,640 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:00,557 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:01,583 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:03,086 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:04,093 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:05,201 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:06,202 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:07,740 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:08,742 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:10,210 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:11,216 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:12,340 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:13,342 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:15,022 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:16,024 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:17,239 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:18,241 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:19,422 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:20,429 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:22,341 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:23,345 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:24,733 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:25,738 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:27,120 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:28,125 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:29,430 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:30,433 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:32,437 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:33,439 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:34,907 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:35,903 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:37,111 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:38,114 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:40,141 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:41,143 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:42,394 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:43,395 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:45,340 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:46,346 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:47,742 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:48,745 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:50,637 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:51,639 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:52,790 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:53,794 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:54,989 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:56,010 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:58:58,050 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:58:59,053 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:59:00,200 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:59:01,207 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:59:02,486 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:59:03,491 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:59:05,230 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:59:06,235 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:59:08,099 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:59:09,108 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:59:11,085 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:59:12,092 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:59:13,267 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:59:14,269 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:59:15,877 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:59:16,876 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:59:18,367 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:59:19,441 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:59:21,360 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:59:22,363 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:59:24,146 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:59:29,046 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:59:30,882 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:59:31,896 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:59:33,586 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:59:34,724 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:59:36,036 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:59:37,081 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:59:38,660 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:59:39,750 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:59:40,903 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:59:41,908 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:59:43,613 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-05-18 21:59:44,635 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15c1b79b3bb0011 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-05-18 21:59:45,965 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.31.101/192.168.31.101:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-05-18 22:00:05,024 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.178.1:20880,url:dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.e3.service.ItemService&methods=getItemById&pid=6196&revision=0.0.1-SNAPSHOT&side=consumer&timeout=60000&timestamp=1495114007365, dubbo version: 2.5.3, current host: 192.168.178.1
+
+
+[WARN ] 2017-05-18 22:00:06,132 method:com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:160)
+ [DUBBO] client reconnect to 192.168.178.1:20880 find error . url: dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.e3.service.ItemService&methods=getItemById&pid=6196&revision=0.0.1-SNAPSHOT&side=consumer&timeout=60000&timestamp=1495114007365, dubbo version: 2.5.3, current host: 192.168.178.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.178.1:20880/com.e3.service.ItemService?anyhost=true&application=e3-manager-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.e3.service.ItemService&methods=getItemById&pid=6196&revision=0.0.1-SNAPSHOT&side=consumer&timeout=60000&timestamp=1495114007365) failed to connect to server /192.168.178.1:20880, error message is:Connection refused: no further information: /192.168.178.1:20880
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: no further information: /192.168.178.1:20880
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
